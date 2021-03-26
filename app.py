@@ -1,6 +1,7 @@
 """
 Controller
 """
+import os
 import uvicorn
 
 from fastapi import FastAPI
@@ -60,5 +61,5 @@ if __name__ == "__main__":
     uvicorn.run(
         app,
         host=APP_CONFIGS.get_configuration(SOCKET_HOST),
-        port=APP_CONFIGS.get_configuration(PORT),
+        port=os.environ.get('PORT', '5000'),
     )
