@@ -21,7 +21,7 @@ class PredictionServiceRequest(BaseModel):
     """
 
     source: str = Field(..., min_length=1, example="openapi")
-    text: str = Field(..., min_length=1, example="Don't let the knives sink :P")
+    text: str = Field(..., min_length=1, example="Which plastic wrap is okay for oven use?")
 
 
 class PredictionServiceResponse(BaseModel):
@@ -29,5 +29,5 @@ class PredictionServiceResponse(BaseModel):
     Prediction Service Response Schema
     """
 
-    label: str = Field(..., example="knives")
-    confidence: float = Field(..., example=86.64)
+    label: str = Field(..., example="baking")
+    confidence: float = Field(..., example=98.86)

@@ -18,15 +18,15 @@ tags_metadata = [
         "name": "Prediction Service",
         "description": "Prediction Service APIs",
         "externalDocs": {
-            "description": "External Document",
-            "url": "https://link.to.external.document.com/",
+            "description": "Project API Documentation",
+            "url": "https://ml-prediction-web-service.herokuapp.com/redoc",
         },
     },
 ]
 
 app = FastAPI(
     title="ML Prediction Web Service",
-    description="This project is a production ready ML Prediction Web Service template. "
+    description="This project is a sentence classifier trained on cooking section of StackExchange. Given a question it will suggest the appropriate label for the question."
     "<br /><br />"
     "Author - [***Pranay Chandekar***](https://www.linkedin.com/in/pranaychandekar/)",
     version="2.0.0",
